@@ -1,0 +1,18 @@
+{%extends "base.html" %}
+
+{% block title %}{{object.text}}{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 py-4 px-1">
+            <a href="{% url 'feed:index' %}">&larr; Go back</a>
+            <h3><h3>
+            {{ object.text }}
+            <h3><h3>
+            <img src="{{ object.image.url }}" class= "rounded float-start" style='width: 95%; height: auto;'>
+
+        </div>
+    </div>
+
+
+{% endblock %}
